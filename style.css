@@ -1,3 +1,45 @@
+html {
+    font-size: 100%;
+}
+
 body {
     font-family: 'Manrope', sans-serif;
+    line-height: 1.6;
+    background: center no-repeat url(./images/bg-pattern.svg) ;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Flexbox Styles */
+
+.cont {
+    display: flex;
+}
+.col {
+    flex-direction: column;
+}
+.cent-h {
+    align-items: center;
+}
+.cent-v {
+    justify-content: center;
+}
+
+/* Text Style */
+.text-c {
+    text-align: center;
+}
+.no-bullets {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+/* Banner Styles */
+
+.banner {
+    background: center no-repeat url(./images/pattern-circles.svg);
+    height: 150px;
 }
