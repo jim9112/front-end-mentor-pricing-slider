@@ -67,6 +67,10 @@ a {
 }
 .divider {
   border-top: 1px solid hsl(223, 50%, 87%);
+  padding-top: 30px;
+}
+.small-text {
+  font-size: 12px;
 }
 /* Banner Styles */
 
@@ -74,7 +78,11 @@ a {
   background: center no-repeat url(./images/pattern-circles.svg);
   height: 200px;
 }
-
+.billing {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
 .main {
   width: 33.75rem;
   height: 25rem;
@@ -93,10 +101,13 @@ a {
 .discount {
   background: hsl(14, 92%, 95%);
   border-radius: 20px;
-  padding: 5px;
+  padding: 1px;
   font-size: 10px;
   width: 80px;
   height: 20px;
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 20px;
 }
 /* Slider */
 
@@ -133,6 +144,8 @@ a {
   display: inline-block;
   width: 50px;
   height: 25px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .switch input {
