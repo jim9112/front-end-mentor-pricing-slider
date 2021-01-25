@@ -30,7 +30,9 @@ a {
 .cent-v {
     justify-content: center;
 }
-
+.space-between {
+    justify-content: space-between;
+}
 /* Text Style */
 .text-c {
     text-align: center;
