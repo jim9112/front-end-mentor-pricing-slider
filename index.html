@@ -26,28 +26,35 @@
     </p>
   </header>
 <main class="main">
-  <div class="cont space-between">
-    <div class="cont grayish">
+  <!-- Pricing/Page Views -->
+  <div class="cont space-between pad-1">
+    <div class="cont grayish cent-h">
       <span class="page-views"></span><p>k Pageviews</p> 
     </div>
-    <div class="cont">
-      $ /month
+    <div class="cont cent-h">
+      <h1 class="cost"></h1> <span class="grayish">/month</span>
     </div>
   </div>
-  <div class="slidecontainer">
-    <input class="slider" type="range" min="1" max="999"  name="pageviews">
-  </div>
-  <div>
 
-    Monthly Billing
+  <!-- Slider -->
+  <div class="pad-1">
+    <input class="slider" type="range" min="1" max="200" value="100"  name="pageviews">
+  </div>
+
+  <!-- Billing Selector -->
+  <div class="pad-1">
+    <span class="grayish">Monthly Billing</span>
     <label class="switch">
       <input type="checkbox">
       <span class="toggle round"></span>
     </label>
-    Yearly Billing 25% discount
+    <span class="grayish">Yearly Billing</span>
+    <span class="light-red discount">25% discount</span>
+     
   </div>
 
-  <div class="cont space-between cent-h">
+  <!-- Call To Action -->
+  <div class="cont space-between cent-h divider pad-1">
     <ul class="no-bullets grayish">
       <li> <img src="./images/icon-check.svg" alt="check mark"> Unlimited websites</li>
       <li> <img src="./images/icon-check.svg" alt="check mark"> 100% data ownership</li>
@@ -59,10 +66,10 @@
   </div>
 </main>
   
-  <div class="attribution">
+  <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    Coded by <a href="https://www.jimmyhannan.com" target="blank">James</a>.
+  </footer>
   <script src="./app.js"></script>
 </body>
 </html>
