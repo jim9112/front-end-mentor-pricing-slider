@@ -1,75 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="preconnect" href="https://fonts.gstatic.com"> 
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <title>Frontend Mentor | Interactive pricing component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Interactive pricing component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body class="cont col cent-h">
-  <header class="banner cont col cent-v text-c">
-    <h1 class="dark">
-      Simple, traffic-based pricing
-    </h1>
-    <p class="grayish">
-      Sign-up for our 30-day trial. No credit card required. 
-    </p>
-  </header>
-<main class="main">
-  <!-- Pricing/Page Views -->
-  <div class="cont space-between pad-1">
-    <div class="cont grayish cent-h">
-      <span class="page-views"></span><p>k Pageviews</p> 
-    </div>
-    <div class="cont cent-h">
-      <h1 class="cost"></h1> <span class="grayish">/month</span>
-    </div>
-  </div>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body class="cont col cent-h">
+    <header class="banner cont col cent-v text-c">
+      <h1 class="dark">Simple, traffic-based pricing</h1>
+      <p class="grayish">
+        Sign-up for our 30-day trial. No credit card required.
+      </p>
+    </header>
+    <main class="main">
+      <!-- Pricing/Page Views -->
+      <div class="cont space-between pad-1">
+        <div class="cont grayish cent-h">
+          <span class="page-views"></span>
+          <p>k Pageviews</p>
+        </div>
+        <div class="cont cent-h">
+          <h1 class="cost"></h1>
+          <span class="grayish"> / month</span>
+        </div>
+      </div>
 
-  <!-- Slider -->
-  <div class="pad-1">
-    <input class="slider" type="range" min="1" max="200" value="100"  name="pageviews">
-  </div>
+      <!-- Slider -->
+      <div class="pad-1">
+        <input
+          class="slider"
+          type="range"
+          min="1"
+          max="200"
+          value="100"
+          name="pageviews"
+        />
+      </div>
 
-  <!-- Billing Selector -->
-  <div class="pad-1">
-    <span class="grayish">Monthly Billing</span>
-    <label class="switch">
-      <input type="checkbox">
-      <span class="toggle round"></span>
-    </label>
-    <span class="grayish">Yearly Billing</span>
-    <span class="light-red discount">25% discount</span>
-     
-  </div>
+      <!-- Billing Selector -->
+      <div class="pad-1">
+        <span class="grayish">Monthly Billing</span>
+        <label class="switch">
+          <input type="checkbox" />
+          <span class="toggle round"></span>
+        </label>
+        <span class="grayish">Yearly Billing</span>
+        <span class="light-red discount">25% discount</span>
+      </div>
 
-  <!-- Call To Action -->
-  <div class="cont space-between cent-h divider pad-1">
-    <ul class="no-bullets grayish">
-      <li> <img src="./images/icon-check.svg" alt="check mark"> Unlimited websites</li>
-      <li> <img src="./images/icon-check.svg" alt="check mark"> 100% data ownership</li>
-      <li> <img src="./images/icon-check.svg" alt="check mark"> Email reports</li>
-    </ul>
-    
-    <a href="#" target="_blank" rel="noopener noreferrer"><span class="cta pale-blue">Start my trial</span></a>
-    
-  </div>
-</main>
-  
-  <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://www.jimmyhannan.com" target="blank">James</a>.
-  </footer>
-  <script src="./app.js"></script>
-</body>
+      <!-- Call To Action -->
+      <div class="cont space-between cent-h divider pad-1">
+        <ul class="no-bullets grayish">
+          <li>
+            <img src="./images/icon-check.svg" alt="check mark" /> Unlimited
+            websites
+          </li>
+          <li>
+            <img src="./images/icon-check.svg" alt="check mark" /> 100% data
+            ownership
+          </li>
+          <li>
+            <img src="./images/icon-check.svg" alt="check mark" /> Email reports
+          </li>
+        </ul>
+
+        <a class="cta pale-blue cont cent-h cent-v" href="#">
+          <p>Start my trial</p>
+        </a>
+      </div>
+    </main>
+
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://www.jimmyhannan.com" target="blank">James</a>.
+    </footer>
+    <script src="./app.js"></script>
+  </body>
 </html>
