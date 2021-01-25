@@ -39,27 +39,26 @@
     </header>
     <main class="main">
       <!-- Pricing/Page Views -->
-      <div class="cont space-between pad-1">
+      <div class="pricing pad-1">
         <div class="cont grayish cent-h">
           <span class="page-views"></span>
           <p>k Pageviews</p>
         </div>
-        <div class="cont cent-h">
+        <div class="cont">
           <h1 class="cost"></h1>
           <span class="grayish"> / month</span>
         </div>
-      </div>
-
-      <!-- Slider -->
-      <div class="pad-1">
-        <input
-          class="slider"
-          type="range"
-          min="1"
-          max="200"
-          value="100"
-          name="pageviews"
-        />
+        <!-- Slider -->
+        <div class="">
+          <input
+            class="slider"
+            type="range"
+            min="1"
+            max="200"
+            value="100"
+            name="pageviews"
+          />
+        </div>
       </div>
 
       <!-- Billing Selector -->
@@ -70,7 +69,10 @@
           <span class="toggle round"></span>
         </label>
         <span class="grayish small-text">Yearly Billing</span>
-        <span class="light-red discount cont cent-h cent-v">25% discount</span>
+        <span class="light-red discount cont cent-h cent-v">
+          <span class="desktop-hide">-</span> 25%
+          <span class="mobile-hide">discount</span></span
+        >
       </div>
 
       <!-- Call To Action -->
