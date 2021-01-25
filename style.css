@@ -69,6 +69,7 @@ a {
     border-radius: 20px;
 }
 
+/* Slider */
 .slidecontainer {
     width: 100%;
   }
@@ -102,6 +103,7 @@ a {
       outline: none;
   }
 
+  /* Toggle Switch */
   .switch {
     position: relative;
     display: inline-block;
