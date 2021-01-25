@@ -105,8 +105,8 @@ a {
   .switch {
     position: relative;
     display: inline-block;
-    width: 60px;
-    height: 34px;
+    width: 50px;
+    height: 25px;
   }
   
   .switch input { 
@@ -121,7 +121,7 @@ a {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ccc;
+    background-color: hsl(223, 50%, 87%);
     -webkit-transition: .4s;
     transition: .4s;
   }
@@ -129,27 +129,27 @@ a {
   .toggle:before {
     position: absolute;
     content: "";
-    height: 26px;
-    width: 26px;
+    height: 20px;
+    width: 20px;
     left: 4px;
-    bottom: 4px;
+    bottom: 2.6px;
     background-color: white;
     -webkit-transition: .4s;
     transition: .4s;
   }
   
   input:checked + .toggle {
-    background-color: #2196F3;
+    background-color: hsl(174, 86%, 45%);
   }
   
   input:focus + .toggle {
-    box-shadow: 0 0 1px #2196F3;
+    box-shadow: 0 0 1px hsl(174, 86%, 45%);
   }
   
   input:checked + .toggle:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
+    -webkit-transform: translateX(22px);
+    -ms-transform: translateX(22px);
+    transform: translateX(22px);
   }
   
   /* Rounded sliders */
