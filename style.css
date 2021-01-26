@@ -6,12 +6,11 @@ body {
   font-family: 'Manrope', sans-serif;
   line-height: 1.6;
   font-size: 15px;
-  background: hsl(230, 100%, 99%) no-repeat url(./images/bg-pattern.svg);
+  background: hsl(230, 100%, 99%) left 0 no-repeat url(./images/bg-pattern.svg);
+  background-size: 100% 50%;
   height: 100vh;
 }
 footer {
-  position: absolute;
-  bottom: 0;
   padding: 1rem;
 }
 * {
@@ -111,7 +110,8 @@ a {
 .pricing {
   display: grid;
   grid-template-columns: auto auto auto auto;
-  grid-template-rows: auto, auto;
+  grid-template-rows: auto auto;
+  gap: 30px;
 }
 .pricing :nth-child(1) {
   grid-column: 1 / span 2;
@@ -234,9 +234,20 @@ input:checked + .toggle:before {
   .main {
     width: 100%;
     height: auto;
+    padding-bottom: 65px;
   }
   .mobile-hide {
     display: none;
+  }
+  .mobile-cta {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .mobile-list {
+    margin-bottom: 85px;
+    width: 100%;
+    text-align: center;
   }
   .pricing {
     grid-template-rows: auto auto auto;
@@ -265,6 +276,10 @@ input:checked + .toggle:before {
 }
 
 @media (min-width: 501px) {
+  footer {
+    position: absolute;
+    bottom: 0;
+  }
   .desktop-hide {
     display: none;
   }
